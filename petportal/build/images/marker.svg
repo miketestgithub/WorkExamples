@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="22px" viewBox="0 0 16 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="05-05-01---Vet-clinics---map-view" transform="translate(-640.000000, -575.000000)" fill="#2380FF" fill-rule="nonzero">
+            <g id="google_map" transform="translate(0.000000, 230.000000)">
+                <g id="Group-7" transform="translate(640.000000, 345.000000)">
+                    <path d="M7.9032233,0 C3.53848544,0 0,3.56305714 0,7.9585 C0,9.89104286 0.684737864,11.6629857 1.82260194,13.0412857 L7.91005825,21.8857571 L14.0865243,12.9122714 C14.2344078,12.7259 14.4545761,12.4011905 14.7470291,11.9381429 C15.4196505,10.7668 15.8064466,9.40877143 15.8064466,7.9585 C15.8064466,3.56305714 12.2682718,0 7.9032233,0 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

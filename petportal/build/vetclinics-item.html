@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Animal Registry</title>
+    <link href="images/fav.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="css/application.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/vendors.js" type="text/javascript"></script>
+    <script src="js/application.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="header-before"></div>
+    <header class="header header_inside">
+        <div class="container">
+            <div class="header__logo">
+                <img alt="" src="images/logo.svg">
+            </div>
+            <div class="header-navbar">
+                <ul id="menu-header-menu">
+                    <li>
+                        <a href="">
+About
+</a>
+                    </li>
+                    <li>
+                        <a href="">
+Pet Care
+</a>
+                    </li>
+                    <li>
+                        <a href="">
+Shop
+</a>
+                    </li>
+                    <li class="current-menu-item">
+                        <div class="submenu j-submenushow">
+                            <ul>
+                                <li>
+                                    <a href="">
+News and Blog
+</a>
+                                </li>
+                                <li>
+                                    <a href="">
+Entertainment
+</a>
+                                </li>
+                                <li>
+                                    <a href="">
+Vet Clinics
+</a>
+                                </li>
+                                <li>
+                                    <a href="">
+Legal information
+</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="">
+Resources
+</a>
+                    </li>
+                    <li>
+                        <a href="">
+Pet database
+</a>
+                    </li>
+                    <li>
+                        <a href="">
+Contact us
+</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-profile">
+                <a class="c-but c-but_flat header-profile__but" href="">
+Profile
+<span class="c-arrow c-arrow_down blue"></span>
+</a>
+                <ul class="header-profile-menu">
+                    <li>
+                        <a href="">
+Your pets
+</a>
+                        <span>
+5
+</span>
+                    </li>
+                    <li>
+                        <a href="">
+User information
+</a>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href="">
+Cart
+</a>
+                        <span>
+3
+</span>
+                    </li>
+                    <li>
+                        <a href="">
+Orders
+</a>
+                        <span>
+1
+</span>
+                    </li>
+                    <li>
+                        <a href="">
+Logout
+</a>
+                        <span></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-burger burger-menu">
+                <span class="burger-menu__itm"></span>
+                <span class="burger-menu__itm"></span>
+                <span class="burger-menu__itm"></span>
+            </div>
+            <div class="header-message j-header-message">
+                <p class="header-message__txt c-txt">
+                    Your account already exists. Would you like to
+                </p>
+            </div>
+        </div>
+    </header>
+    <div class="page page_inside2 p-vetclinic-item">
+        <div class="content-main">
+            <div class="widther2">
+                <a class="lnk-back" href="">
+                    <div class="c-arrow c-arrow_left paleblue"></div>
+                    Back to vet clinics
+                </a>
+                <div class="vetclinic-item item-t1">
+                    <div class="vetclinic-item-imgbx item-t1-imgbx">
+                        <img alt="" src="images/clinic3@2x.jpg">
+                    </div>
+                    <h1 class="vetclinic-item__h c-h2">
+                        St. Ann New York Vet clinic
+                    </h1>
+                    <svg style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+<symbol id="star" preserveaspectratio="xMaxYMax meet" viewbox="0 0 28 28">
+<title>Star Rating</title>
+<path class="star" d="M13.996,22.501 L22.649,27.997 L20.352,17.637 L27.996,10.667 L17.930,9.768 L13.996,-0.003 L10.063,9.768 L-0.003,10.667 L7.641,17.637 L5.345,27.997 L13.996,22.501 Z"></path>
+</symbol>
+</svg>
+                    <div class="rating">
+                        <fieldset class="rating-fieldset">
+                            <span>
+<input class="rating-checkbox" id="star5" name="star" type="checkbox" value="5">
+<span class="full" for="star5" title="Awesome - 5 stars">
+<svg aria-label="rating" role="img">
+<use xlink:href="#star"></use>
+</svg>
+</span>
+                            <input class="rating-checkbox" id="star4half" name="star" type="checkbox" value="4.5">
+                            <span class="half" for="star4half" name="star" title="Pretty good - 4.5 stars">
+<svg aria-label="rating" role="img">
+<use xlink:href="#star"></use>
+</svg>
+</span>
+                            </span>
+                            <span>
+<input class="rating-checkbox" id="star4" name="star" type="checkbox" value="4">
+<span class="full" for="star4" title="Pretty good - 4 stars">
+<svg aria-label="rating" role="img">
+<use xlink:href="#star"></use>
+</svg>
+</span>
+                            <input class="rating-checkbox" id="star3half" name="star" type="checkbox" value="3.5">
+                            <span class="half" for="star3half" title="Meh - 3.5 stars">
+<svg aria-label="rating" role="img">
+<use xlink:href="#star"></use>
+</svg>
+</span>
+                            </span>
+                            <span>
+<input class="rating-checkbox" id="star3" name="star" type="checkbox" value="3">
+<span class="full" for="star3" name="star" title="Meh - 3 stars">
+<svg aria-label="rating" role="img">
+<use xlink:href="#star"></use>
+</svg>
+</span>
+                            <input class="rating-checkbox" id="star2half" name="star" type="checkbox" value="2.5">
+                            <span class="half" for="star2half" title="Kinda bad - 2.5 stars">
+<svg aria-label="rating" role="img">
+<use xlink:href="#star"></use>
+</svg>
+</span>
+                            </span>
+                            <span class="active">
+<input checked="true" class="rating-checkbox" id="star2" name="star" type="checkbox" value="2">
+<span class="full" for="star2" title="Kinda bad - 2 stars">
+<svg aria-label="rating" role="img">
+<use xlink:href="#star"></use>
+</svg>
+</span>
+                            <input class="rating-checkbox" id="star1half" name="star" type="checkbox" value="1.5">
+                            <span class="half" for="star1half" title="Meh - 1.5 stars">
+<svg aria-label="rating" role="img">
+<use xlink:href="#star"></use>
+</svg>
+</span>
+                            </span>
+                            <span>
+<input class="rating-checkbox" id="star1" name="star" type="checkbox" value="1">
+<span class="full" for="star1" title="Sucks big time - 1 star">
+<svg aria-label="rating" role="img">
+<use xlink:href="#star"></use>
+</svg>
+</span>
+                            <input class="rating-checkbox" id="starhalf" name="star" type="checkbox" value="0.5">
+                            <span class="half" for="starhalf" title="Sucks big time - 0.5 stars">
+<svg aria-label="rating" role="img">
+<use xlink:href="#star"></use>
+</svg>
+</span>
+                            </span>
+                        </fieldset>
+                        <div class="rating-num c-txt">
+                            4.5
+                        </div>
+                        <div class="rating-by">
+                            by
+                            <img alt="" src="images/yelp-logo@2x.png">
+                        </div>
+                    </div>
+                    <p class="vetclinic-item__phone">
+                        <span>
+<img alt="" src="images/phone_pale.svg">
+</span>
+                        <span>
++1(844) 446-75-87
+</span>
+                    </p>
+                    <p class="vetclinic-item__addr">
+                        <span>
+<img alt="" src="images/point.svg">
+</span>
+                        <span>
+1150 W Evelyn Ave, Sunnyvale, CA 94086, USA
+</span>
+                    </p>
+                    <p class="vetclinic-item__date">
+                        Mon-Sun: 08:30AM - 10:00PM
+                    </p>
+                    <div class="vetclinic-item-txtbx">
+                        <p class="vetclinic-item__txt c-txt item-t1__txt">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes,
+                            nascetur ridiculus mus.
+                        </p>
+                    </div>
+                    <div class="map">
+                        <div id="map"></div>
+                    </div>
+                    <section class="customer-reviews">
+                        <div class="customer-reviews__h c-h4">
+                            Reviews
+                        </div>
+                        <div class="customer-reviews-itm">
+                            <div class="customer-reviews-itm__name c-txt">
+                                John S.
+                                <img alt="" src="images/stars@2x.png">
+                            </div>
+                            <p class="c-txt customer-reviews-itm__msg">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                            </p>
+                        </div>
+                        <div class="customer-reviews-itm">
+                            <p class="customer-reviews-itm__name c-txt">
+                                John S.
+                                <img alt="" src="images/stars@2x.png">
+                            </p>
+                            <p class="c-txt customer-reviews-itm__msg">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                            </p>
+                        </div>
+                    </section>
+                    <a class="lnk-back" href="">
+                        <div class="c-arrow c-arrow_left paleblue"></div>
+                        Back to vet clinics
+                    </a>
+                </div>
+            </div>
+        </div>
+        <section class="subscribe">
+            <div class="subscribe-form-bx">
+                <form action="" class="subscribe-form">
+                    <label class="subscribe-form__lbl" for="email">
+Subscribe to our updates
+</label>
+                    <input class="subscribe-form__inp" id="email" placeholder="Enter your email" type="email">
+                    <button class="subscribe-form__submit c-but c-but_white">
+Subscribe
+</button>
+                </form>
+            </div>
+        </section>
+        <div class="footer">
+            <div class="footer-nav">
+                <ul>
+                    <li>
+                        <a href="">
+About
+</a>
+                    </li>
+                    <li>
+                        <a href="">
+Shop
+</a>
+                    </li>
+                    <li>
+                        <a href="">
+Pet Public Database
+</a>
+                    </li>
+                    <li>
+                        <a href="">
+Pet Care
+</a>
+                    </li>
+                    <li>
+                        <a href="">
+News
+</a>
+                    </li>
+                    <li>
+                        <a href="">
+Blogs
+</a>
+                    </li>
+                    <li>
+                        <a href="">
+Interviews
+</a>
+                    </li>
+                    <li>
+                        <a href="">
+Entertainment
+</a>
+                    </li>
+                    <li>
+                        <a href="">
+Videos
+</a>
+                    </li>
+                    <li>
+                        <a href="">
+Photos
+</a>
+                    </li>
+                    <li>
+                        <a href="">
+Directory of vet clinics
+</a>
+                    </li>
+                    <li>
+                        <a href="">
+Events
+</a>
+                    </li>
+                    <li>
+                        <a href="">
+Legal info
+</a>
+                    </li>
+                </ul>
+                <div class="footer-prt">
+                    <div class="footer-phone footer-txtline">
+                        <div class="footer-txtline-bx">
+                            <img alt="" src="images/phone.svg">
+                        </div>
+                        <a class="footer-txtline-bx" href="tel:+18444467587">
++1(844) 446-75-87
+</a>
+                    </div>
+                    <div class="footer-addr footer-txtline">
+                        <div class="footer-txtline-bx">
+                            <img alt="" src="images/place.svg">
+                        </div>
+                        <div class="footer-txtline-bx">
+                            1150 W Evelyn Ave,
+                            <span class="linebreak"></span> Sunnyvale, CA 94086, USA
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-botline">
+                <img alt="" class="footer__logo" src="images/logo_grey@2x.png">
+                <div class="footer-botline__prt">
+                    <div class="social">
+                        <a class="social__lnk" href="">
+<img alt="" src="images/fcb.svg">
+</a>
+                        <a class="social__lnk" href="">
+<img alt="" src="images/twit.svg">
+</a>
+                        <a class="social__lnk" href="">
+<img alt="" src="images/insta.svg">
+</a>
+                    </div>
+                    <div class="additional">
+                        <ul>
+                            <li>
+                                <a href="">
+Privacy Policy
+</a>
+                            </li>
+                            <li>
+                                <a href="">
+Terms of use
+</a>
+                            </li>
+                            <li>
+                                <a href="">
+Return policy
+</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-botline__prt">
+                    <p class="footer-reserved">
+                        All rights reserved. Animal Registry, 2018.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script>
+            function initMap() {
+                var uluru = {
+                    lat: -25.363,
+                    lng: 131.044
+                };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 4,
+                    center: uluru
+                });
+                var image = '../images/marker.svg';
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map,
+                    icon: image
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCApFnVUVTih6AWpKjhvloqsNey0uzyZvQ&amp;callback=initMap"></script>
+    </div>
+</body>
+
+</html>

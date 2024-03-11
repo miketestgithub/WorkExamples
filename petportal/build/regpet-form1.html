@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Animal Registry</title>
+    <link href="images/fav.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="css/application.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/vendors.js" type="text/javascript"></script>
+    <script src="js/application.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="header-before"></div>
+    <header class="header_pet">
+        <div class="container">
+            <a class="lnk-back" href="">
+                <div class="c-arrow c-arrow_left paleblue"></div>
+                Back
+                <span class="hide-m">
+to Register your first pet
+</span>
+            </a>
+            <div class="header__logo">
+                <img alt="" src="images/logo.svg">
+            </div>
+            <div class="phone">
+                <div class="phone__ico">
+                    <img alt="" src="images/phone_light.svg">
+                </div>
+                <div>
+                    <a class="phone__lnk" href="">
+Need some help?
+</a>
+                    <p class="phone__num">
+                        +1 (844) 446-75-87
+                    </p>
+                </div>
+            </div>
+            <div class="header-message j-header-message">
+                <p class="header-message__txt c-txt">
+                    Your account already exists. Would you like to
+                    <a href="">
+sign in
+</a> ?
+                </p>
+            </div>
+        </div>
+    </header>
+    <div class="page regpet regpet_form1">
+        <div class="content w2">
+            <h1 class="c-h2 regpet__h">
+                Register your first pet
+            </h1>
+            <div class="whitebx_big">
+                <div class="prts">
+                    <div class="prt">
+                        <form action="" class="c-form" id="j-petform">
+                            <div class="row">
+                                <div class="form-el form-el_name">
+                                    <label class="c-lbl" for="name">
+Pet name
+</label>
+                                    <input class="c-inp linking-name" id="name" minlength="2" name="name" required type="text">
+                                </div>
+                                <div class="form-el form-el_dob">
+                                    <label class="c-lbl" for="datepicker">
+Select DOB
+</label>
+                                    <input class="c-inp" id="datepicker" minlength="2" name="datepicker" required type="text">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="half">
+                                    <div class="form-el">
+                                        <label class="c-lbl" for="lastname">
+Pet Type
+</label>
+                                        <div class="switch-toggle switch-candy">
+                                            <input checked class="linking-type" id="d-c2" name="type" type="radio">
+                                            <label for="d-c2">
+Dog
+</label>
+                                            <input class="linking-type" id="d-c3" name="type" type="radio">
+                                            <label for="d-c3">
+Cat
+</label>
+                                            <a href=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="half">
+                                    <div class="form-el">
+                                        <label class="c-lbl" for="email">
+Breed
+</label>
+                                        <select class="c-inp j-nice-select" required>
+<option disabled selected value="">
+Select
+</option>
+<option value="">
+Sheepdog
+</option>
+<option value="">
+Bulldog
+</option>
+</select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="half">
+                                    <div class="form-el">
+                                        <label class="c-lbl" for="lastname">
+Gender
+</label>
+                                        <div class="switch-toggle switch-candy">
+                                            <input checked class="linking-gender" id="d-c4" name="gender" type="radio">
+                                            <label for="d-c4">
+Male
+</label>
+                                            <input class="linking-gender" id="d-c5" name="gender" type="radio">
+                                            <label for="d-c5">
+Female
+</label>
+                                            <a href=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="half">
+                                    <div class="form-el form-el_weight">
+                                        <label class="c-lbl" for="weight">
+Weight (lb)
+</label>
+                                        <input class="c-inp linking-weight" id="weight" minlength="2" name="weight" required type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-el">
+                                <label class="c-lbl" for="address">
+Your address on Pet ID
+</label>
+                                <input class="c-inp linking-addr" id="autocomplete" minlength="2" name="address" onFocus="geolocate()" required type="text">
+                                <input class="none" id="route" name="route" type="text">
+                            </div>
+                            <div class="row">
+                                <div class="half">
+                                    <div class="form-el">
+                                        <label class="c-lbl" for="locality">
+City
+</label>
+                                        <input class="c-inp" disabled id="locality" minlength="2" name="locality" required>
+                                    </div>
+                                </div>
+                                <div class="half">
+                                    <div class="form-el">
+                                        <label class="c-lbl" for="administrative_area_level_1">
+State
+</label>
+                                        <input class="c-inp" disabled id="administrative_area_level_1" minlength="2" name="administrative_area_level_1" required type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="half">
+                                    <div class="form-el">
+                                        <label class="c-lbl" for="postal_code">
+ZIP Code
+</label>
+                                        <input class="c-inp" disabled id="postal_code" minlength="2" required type="text">
+                                    </div>
+                                </div>
+                                <div class="half">
+                                    <div class="half">
+                                        <div class="form-el">
+                                            <label class="c-lbl" for="street_number">
+Street address
+</label>
+                                            <input class="c-inp" disabled id="street_number" minlength="2" name="street" required type="text">
+                                        </div>
+                                    </div>
+                                    <div class="half">
+                                        <div class="form-el">
+                                            <label class="c-lbl" for="apt">
+Address line 2
+</label>
+                                            <input class="c-inp" disabled id="apt" maxlength="4" minlength="2" required type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="upload-line">
+                                <div class="upload-btn-wrapper">
+                                    <button class="c-but c-but_flat">
+Upload photo
+</button>
+                                    <input name="" type="file">
+                                </div>
+                                <p class="upload-line__note">
+                                    File format - jpg, png, less 10mb
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="prt">
+                        <div class="petidcard">
+                            <div class="petidlogo">
+                                <img alt="" src="images/logo_card.svg">
+                            </div>
+                            <form action="">
+                                <div class="petidagin">
+                                    PET ID 4656342
+                                </div>
+                                <div>
+                                    <div class="petidcard-imgbx">
+                                        <img alt="" class="petidcard-imgbx__img" src="images/inpfile_empty@2x.png">
+                                    </div>
+                                    <div class="petidcard-idbx">
+                                        <div class="petidcard-idbx-num">
+                                            ID: 4656342
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="petidcard-formbx">
+                                    <div class="form-el form-el_4">
+                                        <label class="petidcard-formbx__lbl">
+Animal name
+</label>
+                                        <div class="petidcard-formbx__inp link-name"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-el form-el_100">
+                                            <label class="petidcard-formbx__lbl">
+Breed
+</label>
+                                            <input class="petidcard-formbx__inp link-breed" required type="text">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-el form-el_qtr">
+                                            <label class="petidcard-formbx__lbl">
+Pet type
+</label>
+                                            <input class="petidcard-formbx__inp link-type" required type="text">
+                                        </div>
+                                        <div class="form-el form-el_8">
+                                            <label class="petidcard-formbx__lbl">
+Class
+</label>
+                                            <input class="petidcard-formbx__inp link-class" required type="text">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-el form-el_qtr">
+                                            <label class="petidcard-formbx__lbl">
+DOB
+</label>
+                                            <input class="petidcard-formbx__inp link-dob" required type="text">
+                                        </div>
+                                        <div class="form-el form-el_qtr">
+                                            <label class="petidcard-formbx__lbl">
+Gender
+</label>
+                                            <input class="petidcard-formbx__inp link-gender" required type="text">
+                                        </div>
+                                        <div class="form-el form-el_qtr">
+                                            <label class="petidcard-formbx__lbl">
+Weight
+</label>
+                                            <input class="petidcard-formbx__inp link-weight" required type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-el form-el_100">
+                                        <label class="petidcard-formbx__lbl">
+Owner
+</label>
+                                        <input class="petidcard-formbx__inp" required type="text">
+                                    </div>
+                                    <div class="form-el form-el_92">
+                                        <label class="petidcard-formbx__lbl">
+Address
+</label>
+                                        <label class="petidcard-formbx__inp link-addr" required type="text">
+<span class="link-flat"></span>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="steps-line">
+<div class="c-line"></div>
+<div class="flex">
+<div class="skipprompt">
+<p class="c-txt skipprompt__txt">
+Skip the registration,
+<a href="">
+i will do it later
+</a>
+</p>
+</div>
+<div class="steps-line-butbx">
+<button class="c-but c-but_fill steps-line-butbx__but" onclick="$(&#39;#j-petform&#39;).submit()">
+Next step
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer_user">
+<div class="phone phone_footer">
+<div class="phone__ico">
+<img alt="" src="images/phone_light.svg">
+</div>
+<div>
+<a class="phone__lnk" href="">
+Need some help?
+</a>
+<p class="phone__num">
++1 (844) 446-75-87
+</p>
+</div>
+</div>
+<div class="reserved">
+<p class="reserved__txt">
+All rights reserved.
+<span class="only-mobile"></span>
+Animal Registry, 2018.
+</p>
+</div>
+</div>
+<script>
+  $('.j-nice-select').niceSelect();    
+  $('.nice-select .option').click(function(){
+      if ($(this).is(':contains("Select")')){
+          return false;
+      }   
+      else {
+          $('.link-breed').val($(this).text()); 
+      }
+  
+  });    
+  $(document).ready(function(){
+      $('.link-type').val($('.linking-type:checked').next('label').text());
+      $('.link-gender').val($('.linking-gender:checked').next('label').text());
+      jQuery('#j-petform').validate();
+  });
+  $(function() {
+      
+      pickmeup('#datepicker', { 
+          position: 'left',
+          hide_on_select: true,
+          format: 'm/d/Y',
+          default_date: false,
+          max : new Date(),
+      });
+      datepicker.addEventListener('pickmeup-change', function (e) {
+          var dob = $('#datepicker').val()
+          $('.link-dob').val(dob);
+      })
+  });
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCApFnVUVTih6AWpKjhvloqsNey0uzyZvQ&amp;libraries=places&amp;callback=initAutocomplete"></script>
+<script>
+  
+  // This example displays an address form, using the autocomplete feature
+  // of the Google Places API to help users fill in the information.
+  
+  // This example requires the Places library. Include the libraries=places
+  // parameter when you first load the API. For example:
+  // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+  
+  var placeSearch, autocomplete;
+  var componentForm = {
+      street_number: 'short_name',
+      route: 'long_name',
+      locality: 'long_name',
+      administrative_area_level_1: 'short_name',
+      postal_code: 'short_name'
+  };
+  
+  function initAutocomplete() {
+      // Create the autocomplete object, restricting the search to geographical
+      // location types.
+      autocomplete = new google.maps.places.Autocomplete(
+          /** @type {!HTMLInputElement} */(document.getElementById('autocomplete')),
+          {types: ['geocode']});
+  
+      // When the user selects an address from the dropdown, populate the address
+      // fields in the form.
+      autocomplete.addListener('place_changed', fillInAddress);
+  }
+  
+  function fillInAddress() {
+      // Get the place details from the autocomplete object.
+      var place = autocomplete.getPlace();
+  
+      for (var component in componentForm) {
+          document.getElementById(component).value = '';
+          document.getElementById(component).disabled = false;
+      }
+  
+      // Get each component of the address from the place details
+      // and fill the corresponding field on the form.
+      for (var i = 0; i < place.address_components.length; i++) {
+      var addressType = place.address_components[i].types[0];
+      if (componentForm[addressType]) {
+          var val = place.address_components[i][componentForm[addressType]];
+          document.getElementById(addressType).value = val;
+          $(".link-addr")
+          .html('<span>' + route.value + ' ' + street_number.value + '</span>' + '<span class="link-flat">' + '</span>' + administrative_area_level_1.value + ' ' + locality.value + ' ' + postal_code.value)
+              .addClass('filled');
+          $("#apt").attr('disabled', false);
+      }
+      }
+  }
+  
+  // Bias the autocomplete object to the user's geographical location,
+  // as supplied by the browser's 'navigator.geolocation' object.
+  function geolocate() {
+      if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(position) {
+          var geolocation = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+          };
+          var circle = new google.maps.Circle({
+          center: geolocation,
+          radius: position.coords.accuracy
+          });
+          autocomplete.setBounds(circle.getBounds());
+      });
+      }
+  }
+</script>
+</body>
+</html>

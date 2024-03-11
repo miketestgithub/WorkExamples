@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Animal Registry</title>
+    <link href="images/fav.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="css/application.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/vendors.js" type="text/javascript"></script>
+    <script src="js/application.js" type="text/javascript"></script>
+</head>
+<style>
+    @media print {
+        .petidcard {
+            position: relative;
+            padding: 2.1rem 1.9rem 2.2rem;
+            background: url("../images/petcard_bg@2x.png");
+            background-size: cover;
+            width: 34.7rem;
+            height: 21rem;
+            -webkit-box-shadow: 0 10px 30px 0 rgba(145, 159, 191, 0.4);
+            box-shadow: 0 10px 30px 0 rgba(145, 159, 191, 0.4)
+        }
+        @media(min-width:768px) and (max-width:1024px) {
+            .petidcard {
+                margin-bottom: 2.5rem
+            }
+        }
+        .petidcard form {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex
+        }
+        .petidcard__logo {
+            position: absolute;
+            right: 0
+        }
+        .petidcard-imgbx {
+            width: 12rem;
+            height: auto;
+            position: relative;
+            -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            height: 16rem;
+            background-color: #bed0e4;
+            overflow: hidden;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+            text-align: center
+        }
+        .petidcard-imgbx img {
+            width: 100%;
+            margin: 0 auto;
+            display: block
+        }
+        .petidcard-idbx {
+            width: 8.4rem;
+            margin: -0.9rem auto 0;
+            position: relative;
+            z-index: 9
+        }
+        .petidcard-idbx-num {
+            color: #fff;
+            font-family: Courier New, Courier, monospace;
+            font-weight: 600;
+            -webkit-border-radius: 12px;
+            border-radius: 12px;
+            padding: .2rem 2rem;
+            text-align: center;
+            background-color: #2380ff;
+            font-size: 1.2rem;
+            line-height: 1.2rem;
+            height: 1.8rem;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center
+        }
+        .petidcard-idbx-label {
+            font-family: Courier New, Courier, monospace;
+            font-weight: 600;
+            text-align: center;
+            text-transform: uppercase;
+            color: #919fbf;
+            font-size: .8rem
+        }
+        .petidcard-formbx {
+            width: 17rem;
+            position: relative;
+            margin-right: 1.7rem;
+            padding-top: 2.7rem
+        }
+        .petidcard-formbx:after {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            display: block;
+            content: ''
+        }
+        .petidcard-formbx .form-el {
+            width: 50%
+        }
+        .petidcard-formbx .form-el_92 input {
+            width: 9.2rem
+        }
+        .petidcard-formbx .form-el_92 input:focus,
+        .petidcard-formbx .form-el_92 input:valid {
+            width: 100%
+        }
+        .petidcard-formbx .form-el_4 input {
+            width: 4rem;
+            background-size: 272% 3px;
+            height: 1.4rem
+        }
+        .petidcard-formbx .form-el_4 input:focus,
+        .petidcard-formbx .form-el_4 input:valid {
+            width: 100%
+        }
+        .petidcard-formbx .form-el_36 input {
+            width: 3.8rem
+        }
+        .petidcard-formbx .form-el_36 input:focus,
+        .petidcard-formbx .form-el_36 input:valid {
+            width: 100%
+        }
+        .petidcard-formbx .row .form-el {
+            width: 50%
+        }
+        .petidcard-formbx .row .form-el:first-child {
+            margin-right: 2.4rem
+        }
+        .petidcard-formbx .form-el {
+            margin-bottom: .4rem !important
+        }
+        .petidcard-formbx .form-el_82 {
+            width: 100%;
+            min-width: 14rem
+        }
+        .petidcard-formbx .link-name {
+            font-size: 1.3rem;
+            font-family: Courier New, Courier, monospace;
+            font-weight: 600
+        }
+        .petidcard-formbx__inp {
+            width: 100%;
+            height: 1rem;
+            line-height: 1rem;
+            margin: 0;
+            border: 0;
+            padding-bottom: 0;
+            font-family: Courier New, Courier, monospace;
+            font-size: 1rem;
+            font-weight: 600;
+            background: url("../images/lineborder@2x.png") repeat-x 0 bottom transparent
+        }
+        .petidcard-formbx__inp.link-addr {
+            min-width: 4.2rem;
+            max-width: 15rem;
+            display: block;
+            padding-top: .2rem
+        }
+        .petidcard-formbx__inp.filled {
+            background: 0;
+            min-width: 18rem
+        }
+        .petidcard-formbx__inp.filled span {
+            display: inline-block
+        }
+        .petidcard-formbx__inp:focus,
+        .petidcard-formbx__inp:valid {
+            background: 0
+        }
+        .petidcard-formbx__lbl {
+            line-height: .5rem;
+            font-size: .8rem;
+            font-family: Courier New, Courier, monospace;
+            color: #919fbf;
+            font-weight: bold;
+            display: block;
+            margin: 0 0 0 .1rem
+        }
+    }
+</style>
+
+<body>
+    <div class="page regpet cardone">
+        <div class="petidcard">
+            <div class="petidlogo">
+                <img alt="" src="images/logo_card.svg">
+            </div>
+            <form action="">
+                <div class="petidagin">
+                    PET ID 4656342
+                </div>
+                <div>
+                    <div class="petidcard-imgbx">
+                        <img alt="" class="petidcard-imgbx__img" src="images/inpfile_empty@2x.png">
+                    </div>
+                    <div class="petidcard-idbx">
+                        <div class="petidcard-idbx-num">
+                            ID: 4656342
+                        </div>
+                    </div>
+                </div>
+                <div class="petidcard-formbx">
+                    <div class="form-el form-el_4">
+                        <label class="petidcard-formbx__lbl">
+Animal name
+</label>
+                        <div class="petidcard-formbx__inp link-name"></div>
+                    </div>
+                    <div class="row">
+                        <div class="form-el form-el_100">
+                            <label class="petidcard-formbx__lbl">
+Breed
+</label>
+                            <input class="petidcard-formbx__inp link-breed" required type="text">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-el form-el_qtr">
+                            <label class="petidcard-formbx__lbl">
+Pet type
+</label>
+                            <input class="petidcard-formbx__inp link-type" required type="text">
+                        </div>
+                        <div class="form-el form-el_8">
+                            <label class="petidcard-formbx__lbl">
+Class
+</label>
+                            <input class="petidcard-formbx__inp link-class" required type="text">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-el form-el_qtr">
+                            <label class="petidcard-formbx__lbl">
+DOB
+</label>
+                            <input class="petidcard-formbx__inp link-dob" required type="text">
+                        </div>
+                        <div class="form-el form-el_qtr">
+                            <label class="petidcard-formbx__lbl">
+Gender
+</label>
+                            <input class="petidcard-formbx__inp link-gender" required type="text">
+                        </div>
+                        <div class="form-el form-el_qtr">
+                            <label class="petidcard-formbx__lbl">
+Weight
+</label>
+                            <input class="petidcard-formbx__inp link-weight" required type="text">
+                        </div>
+                    </div>
+                    <div class="form-el form-el_100">
+                        <label class="petidcard-formbx__lbl">
+Owner
+</label>
+                        <input class="petidcard-formbx__inp" required type="text">
+                    </div>
+                    <div class="form-el form-el_92">
+                        <label class="petidcard-formbx__lbl">
+Address
+</label>
+                        <label class="petidcard-formbx__inp link-addr" required type="text">
+<span class="link-flat"></span>
+</div>
+</div>
+</form>
+</div>
+</div>
+</body>
+<script>
+  $(document).ready(function(){
+      if(
+          $('.page').hasClass('cardone')
+      ) {
+          $('html').css('font-size', '30px');
+      }
+      
+  });
+</script>
+</html>

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Animal Registry</title>
+    <link href="images/fav.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="css/application.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/vendors.js" type="text/javascript"></script>
+    <script src="js/application.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="header-before"></div>
+    <header class="header header_checkout">
+        <div class="container">
+            <div class="header__logo">
+                <img alt="" src="images/logo.svg">
+            </div>
+            <div class="overover">
+                <div class="overflower">
+                    <div class="breads">
+                        <div class="breads__itm">
+                            <a href="">
+Cart
+</a>
+                            <span class="c-arrow c-arrow_right"></span>
+                        </div>
+                        <div class="breads__itm">
+                            <a href="">
+Your details
+</a>
+                            <span class="c-arrow c-arrow_right"></span>
+                        </div>
+                        <div class="breads__itm">
+                            <a href="">
+Shipping method
+</a>
+                            <span class="c-arrow c-arrow_right"></span>
+                        </div>
+                        <div class="breads__itm breads__itm_act">
+                            <a href="">
+Payment method
+</a>
+                            <span class="c-arrow c-arrow_right"></span>
+                        </div>
+                        <div class="breads__itm">
+                            <a href="">
+Confirmation
+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="page p-check-details">
+        <div class="content-main">
+            <form action="">
+                <div class="container">
+                    <div class="col-8">
+                        <div class="whitebx">
+                            <div class="whitebx__h c-h4">
+                                Billing address
+                            </div>
+                            <div class="row">
+                                <div class="half">
+                                    <div class="form-el pseudochb">
+                                        <input class="shipaddr" id="free" name="shipaddr" type="radio">
+                                        <label for="free">
+Same as shipping address
+<span></span>
+</label>
+                                    </div>
+                                </div>
+                                <div class="half">
+                                    <div class="form-el pseudochb">
+                                        <input class="shipaddr" id="first" name="shipaddr" type="radio">
+                                        <label for="first">
+Use a different billing address
+<span></span>
+</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden j-showaddrbx">
+                                <div class="row">
+                                    <div class="half">
+                                        <div class="form-el">
+                                            <label class="c-lbl" for="autocomplete">
+Address line 1
+</label>
+                                            <input class="c-inp" id="autocomplete" minlength="2" name="ship-al1" onFocus="geolocate()" required type="text">
+                                        </div>
+                                    </div>
+                                    <div class="half">
+                                        <div class="form-el">
+                                            <label class="c-lbl" for="apt">
+Address line 2
+</label>
+                                            <input class="c-inp" id="apt" minlength="2" name="ship-al2" required type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-el three">
+                                        <label class="c-lbl" for="locality">
+City
+</label>
+                                        <input class="c-inp" id="locality" minlength="2" name="ship-city" required type="text">
+                                    </div>
+                                    <div class="form-el three">
+                                        <label class="c-lbl" for="administrative_area_level_1">
+State
+</label>
+                                        <input class="c-inp" id="administrative_area_level_1" minlength="2" name="ship-state" required type="text">
+                                    </div>
+                                    <div class="form-el three">
+                                        <label class="c-lbl" for="postal_code">
+ZIP Code
+</label>
+                                        <input class="c-inp" id="postal_code" minlength="2" name="ship-zip" required type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="whitebx">
+                            <div class="lilcard-hld lilcard-hld_abs">
+                                <div class="lilcard">
+                                    <input id="card1" name="" type="checkbox">
+                                    <label for="#card1">
+<img alt="" src="images/card1@2x.png">
+</label>
+                                </div>
+                                <div class="lilcard">
+                                    <input name="" type="checkbox">
+                                    <label for="#card2" id="card2">
+<img alt="" src="images/card2@2x.png">
+</label>
+                                </div>
+                                <div class="lilcard">
+                                    <input id="card3" name="" type="checkbox">
+                                    <label for="#card3">
+<img alt="" src="images/card3@2x.png">
+</label>
+                                </div>
+                                <div class="lilcard">
+                                    <input id="card4" name="" type="checkbox">
+                                    <label for="#card4">
+<img alt="" src="images/card4@2x.png">
+</label>
+                                </div>
+                            </div>
+                            <div class="whitebx__h c-h4 j-header">
+                                Payment method
+                            </div>
+                            <div class="j-hide">
+                                <div class="or-section">
+                                    <div class="or-bx">
+                                        <div class="form-el pseudochb">
+                                            <input id="cardnum" name="paytype" type="radio">
+                                            <label for="cardnum">
+MC  **** 4324
+<span></span>
+</label>
+                                        </div>
+                                    </div>
+                                    <div class="or-bx">
+                                        Or
+                                    </div>
+                                    <div class="or-bx">
+                                        <div class="row">
+                                            <div class="form-el type">
+                                                <input class="type__inp" id="amazon" name="paytype" type="radio">
+                                                <label class="type__lbl" for="amazon">
+<img alt="" class="amazon" src="images/amazon@2x.png">
+</label>
+                                            </div>
+                                            <div class="form-el type">
+                                                <input class="type__inp" id="paypal" name="paytype" type="radio">
+                                                <label class="type__lbl" for="paypal">
+<img alt="" class="paypal" src="images/paypal@2x.png">
+</label>
+                                            </div>
+                                            <div class="form-el type">
+                                                <input class="type__inp" id="applepay" name="paytype" type="radio">
+                                                <label class="type__lbl" for="applepay">
+<img alt="" class="apple" src="images/applepay@2x.png">
+</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="lnk-cardedit" href="">
+Change card info
+</a>
+                            </div>
+                            <div class="hid j-cardedit">
+                                <div class="row">
+                                    <div class="half">
+                                        <label class="c-lbl" for="">
+Card number
+</label>
+                                        <input class="c-inp" type="text">
+                                    </div>
+                                    <div class="half">
+                                        <label class="c-lbl" for="">
+Cardholder name
+</label>
+                                        <input class="c-inp" type="text">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-el">
+                                        <label class="c-lbl" for="">
+Exp. date
+</label>
+                                        <select class="j-niceselect" name="">
+<option>
+01
+</option>
+<option>
+02
+</option>
+<option>
+03
+</option>
+<option>
+04
+</option>
+<option>
+05
+</option>
+<option>
+06
+</option>
+<option>
+07
+</option>
+<option>
+08
+</option>
+<option>
+09
+</option>
+<option>
+10
+</option>
+<option>
+11
+</option>
+<option>
+12
+</option>
+</select>
+                                    </div>
+                                    <div class="form-el">
+                                        <label class="c-lbl" for="">
+&nbsp;
+</label>
+                                        <select class="j-niceselect2" name="">
+<option>
+18
+</option>
+<option>
+19
+</option>
+<option>
+20
+</option>
+<option>
+21
+</option>
+</select>
+                                    </div>
+                                    <div class="form-el">
+                                        <label class="c-lbl" for="">
+CVV
+</label>
+                                        <input class="c-inp" maxlength="3" name="" placeholder="" type="text">
+                                    </div>
+                                </div>
+                                <div class="row buthld">
+                                    <div class="c-but c-but_fill c-but_small">
+                                        Save
+                                    </div>
+                                    <div class="c-but c-but_flat c-but_small">
+                                        Cancel
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="butstack">
+                            <a class="lnk-back" href="">
+                                <div class="c-arrow c-arrow_left"></div>
+                                Back to shipping method
+                            </a>
+                            <button class="c-but c-but_fill">
+Next step: Confirmation
+</button>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="whitebx">
+                            <div class="whitebx__h c-h4">
+                                Order summary
+                            </div>
+                            <div class="lilproducs-bx">
+                                <div class="lilproduct">
+                                    <div class="imgbx">
+                                        <img alt="" src="images/product@2x.png">
+                                    </div>
+                                    <div class="txtbx">
+                                        <h3 class="txtbx__h">
+                                            Leather Collar
+                                        </h3>
+                                        <div class="txtbx__line">
+                                            <div class="txtbx__q">
+                                                x2
+                                            </div>
+                                            <div class="txtbx__price">
+                                                $11.98
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lilproduct">
+                                    <div class="imgbx">
+                                        <img alt="" src="images/product@2x.png">
+                                    </div>
+                                    <div class="txtbx">
+                                        <h3 class="txtbx__h">
+                                            Leather Collar
+                                        </h3>
+                                        <div class="txtbx__line">
+                                            <div class="txtbx__q">
+                                                x2
+                                            </div>
+                                            <div class="txtbx__price">
+                                                $11.98
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lilproduct">
+                                    <div class="imgbx">
+                                        <img alt="" src="images/product@2x.png">
+                                    </div>
+                                    <div class="txtbx">
+                                        <h3 class="txtbx__h">
+                                            Leather Collar
+                                        </h3>
+                                        <div class="txtbx__line">
+                                            <div class="txtbx__q">
+                                                x2
+                                            </div>
+                                            <div class="txtbx__price">
+                                                $11.98
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="moreproduct">
+                                    <div class="lilproduct">
+                                        <div class="imgbx">
+                                            <img alt="" src="images/product@2x.png">
+                                        </div>
+                                        <div class="txtbx">
+                                            <h3 class="txtbx__h">
+                                                Leather Collar
+                                            </h3>
+                                            <div class="txtbx__line">
+                                                <div class="txtbx__q">
+                                                    x2
+                                                </div>
+                                                <div class="txtbx__price">
+                                                    $11.98
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lilproduct">
+                                        <div class="imgbx">
+                                            <img alt="" src="images/product@2x.png">
+                                        </div>
+                                        <div class="txtbx">
+                                            <h3 class="txtbx__h">
+                                                Leather Collar
+                                            </h3>
+                                            <div class="txtbx__line">
+                                                <div class="txtbx__q">
+                                                    x2
+                                                </div>
+                                                <div class="txtbx__price">
+                                                    $11.98
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="lnk-showmore j-showmore" href="">
+<span>
+Show more
+</span>
+<div class="c-arrow c-arrow_down"></div>
+</a>
+                            <div class="total-tbl">
+                                <div class="total-tbl-row">
+                                    <div class="total-tbl-cell">
+                                        Subtotal
+                                    </div>
+                                    <div class="total-tbl-cell">
+                                        $58.95
+                                    </div>
+                                </div>
+                                <div class="total-tbl-row">
+                                    <div class="total-tbl-cell">
+                                        Shipping method
+                                    </div>
+                                    <div class="total-tbl-cell">
+                                        &ndash;
+                                    </div>
+                                </div>
+                                <div class="total-tbl-row">
+                                    <div class="total-tbl-cell">
+                                        Tax
+                                    </div>
+                                    <div class="total-tbl-cell">
+                                        $2.60
+                                    </div>
+                                </div>
+                                <div class="total-tbl-row">
+                                    <div class="total-tbl-cell">
+                                        Total
+                                    </div>
+                                    <div class="total-tbl-cell">
+                                        $61.55
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        $(document).ready(function() {
+                            $('.j-showmore').click(function() {
+                                if ($(this).hasClass('j-showmore')) {
+                                    $(this)
+                                        .removeClass('j-showmore')
+                                        .addClass('j-showless')
+                                        .find('span').text('Show less');
+                                    $('.moreproduct').fadeIn(300);
+                                    return false;
+                                } else {
+                                    $(this)
+                                        .removeClass('j-showless')
+                                        .addClass('j-showmore')
+                                        .find('span').text('Show more');
+                                    $('.moreproduct').fadeOut(300);
+                                    return false;
+                                }
+
+
+                            });
+
+
+                        });
+                    </script>
+                    <script>
+                        $('.j-niceselect').niceSelect();
+                        $('.j-niceselect2').niceSelect();
+                        $('#j-paymethods').validate();
+                        $(document).ready(function() {
+                            $('.lnk-cardedit').click(function() {
+                                $('.j-header').text('Change card info');
+                                $('.j-cardedit').fadeIn(400);
+                                $('.j-hide').hide();
+                                $('.lilcard-hld').addClass('j-lilcard-hld');
+                                return false;
+                            });
+                            $('input.shipaddr').change(function() {
+                                if ($('input#first').is(':checked')) {
+                                    $('.j-showaddrbx').fadeIn();
+                                } else {
+                                    $('.j-showaddrbx').fadeOut();
+                                }
+
+                            });
+                        });
+                    </script>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

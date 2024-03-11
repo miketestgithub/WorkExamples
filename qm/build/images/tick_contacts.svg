@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="tablet/01-01-about---" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-362.000000, -717.000000)">
+        <g id="Group-2" transform="translate(158.000000, 717.000000)" fill="#FFA922" fill-rule="nonzero">
+            <path d="M226,0 C238.15,0 248,9.8495 248,22 C248,34.1505 238.15,44 226,44 C213.85,44 204,34.1505 204,22 C204,9.8495 213.85,0 226,0 Z M226,40 C235.941,40 244,31.941 244,22 C244,12.059 235.941,4 226,4 C216.059,4 208,12.059 208,22 C208,31.941 216.059,40 226,40 Z M234.142,16.585 C234.924,17.3665 234.923,18.6325 234.1415,19.4135 L225.6565,27.8985 C224.8755,28.6795 223.6085,28.6795 222.8275,27.8985 L218.5855,23.657 C217.8045,22.8755 217.8045,21.609 218.5855,20.828 C219.367,20.047 220.633,20.047 221.414,20.828 L224.2425,23.6565 L231.3135,16.585 C232.0945,15.8045 233.361,15.8045 234.142,16.585 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

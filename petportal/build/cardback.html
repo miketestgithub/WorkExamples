@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Animal Registry</title>
+    <link href="images/fav.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="css/application.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/vendors.js" type="text/javascript"></script>
+    <script src="js/application.js" type="text/javascript"></script>
+</head>
+<style>
+    @media print {
+        .petbackcard {
+            margin: 0 auto;
+            width: 34.7rem;
+            height: 21rem;
+            position: relative;
+            background: url("../images/cardback@2x.png") no-repeat 0 0 transparent;
+            background-size: cover;
+            color: #fff;
+            font-family: Courier New, Courier, monospace;
+            padding: 4.4rem 2.2rem
+        }
+        .petbackcard .petbacklogo {
+            position: absolute;
+            top: 1.2rem;
+            left: 2rem
+        }
+        .petbackcard .petbacklogo img {
+            width: 10.3rem;
+            height: auto;
+            display: block
+        }
+        .petbackcard .petbackphone {
+            color: #fff;
+            font-size: .9rem;
+            font-family: Courier New, Courier, monospace;
+            position: absolute;
+            right: 2.3rem;
+            font-weight: bold;
+            top: 1.8rem
+        }
+        .petbackcard .petback__txt {
+            font-weight: bold;
+            font-size: .6rem;
+            line-height: .8rem;
+            margin-bottom: 1.2rem;
+            padding-right: 3rem
+        }
+        .petbackcard .servicedg-bx {
+            background-color: #fff;
+            -webkit-border-radius: .7rem;
+            border-radius: .7rem;
+            width: 17rem;
+            height: 10.9rem;
+            color: #000;
+            font-size: 1rem;
+            font-weight: bold;
+            padding-top: .1rem;
+            position: relative
+        }
+        .petbackcard .servicedg-bx__h {
+            position: absolute;
+            left: .6rem;
+            top: .6rem
+        }
+        .petbackcard .servicedg-bx-line {
+            background-color: #919fbf;
+            height: 1px;
+            margin-top: 2.16rem
+        }
+        .petbackcard .petbackid {
+            font-size: .94rem;
+            background-color: rgba(28, 33, 185, 0.5);
+            color: #fff;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            height: 2.3rem;
+            width: 11.8rem;
+            -webkit-border-radius: 1.2rem;
+            border-radius: 1.2rem;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            font-weight: bold;
+            line-height: .9rem;
+            position: absolute;
+            right: 2.2rem;
+            top: 8.3rem
+        }
+        .petbackcard .qrcode {
+            width: 8.2rem;
+            height: 8.2rem;
+            background-color: #fff;
+            -webkit-border-radius: .6rem;
+            border-radius: .6rem;
+            padding: .6rem;
+            position: absolute;
+            right: 4rem;
+            top: 11.3rem
+        }
+        .petbackcard .qrcode img {
+            width: 100%;
+            display: block;
+            height: auto
+        }
+    }
+</style>
+
+<body>
+    <div class="page regpet cardone">
+        <div class="petbackcard">
+            <div class="petbacklogo">
+                <img alt="" src="images/logo_white2.svg">
+            </div>
+            <div class="petbackphone">
+                (866) 526-4625
+            </div>
+            <p class="petback__txt">
+                This is an identification of name and facts on file in the database of
+                <span class="underline">
+AnimalRegistry.com
+</span>
+            </p>
+            <div class="servicedg-bx">
+                <div class="servicedg-bx__h">
+                    Service Dog
+                </div>
+                <div class="servicedg-bx-line"></div>
+                <div class="servicedg-bx-line"></div>
+                <div class="servicedg-bx-line"></div>
+                <div class="servicedg-bx-line"></div>
+            </div>
+            <div class="petbackid">
+                ID: 46568856
+            </div>
+            <div class="qrcode">
+                <img alt="" src="images/temp-qr@2x.png">
+            </div>
+            <p class="qrcode__txt">
+                Use the camera on your device to scan the QR code for registration verification.
+            </p>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function() {
+        if (
+            $('.page').hasClass('cardone')
+        ) {
+            $('html').css('font-size', '30px');
+        }
+
+    });
+</script>
+
+</html>

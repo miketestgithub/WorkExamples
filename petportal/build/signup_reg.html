@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Animal Registry</title>
+    <link href="images/fav.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="css/application.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/vendors.js" type="text/javascript"></script>
+    <script src="js/application.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="header-before"></div>
+    <header class="header_user">
+        <div class="container">
+            <a class="lnk-back" href="">
+                <div class="c-arrow c-arrow_left paleblue"></div>
+                Back
+            </a>
+            <div class="header__logo">
+                <img alt="" src="images/logo.svg">
+            </div>
+            <div class="phone">
+                <div class="phone__ico">
+                    <img alt="" src="images/phone_light.svg">
+                </div>
+                <div>
+                    <a class="phone__lnk" href="">
+Need some help?
+</a>
+                    <p class="phone__num">
+                        +1 (844) 446-75-87
+                    </p>
+                </div>
+            </div>
+            <div class="header-message j-header-message">
+                <p class="header-message__txt c-txt">
+                    Your account already exists. Would you like to
+                    <a href="">
+sign in
+</a> ?
+                </p>
+            </div>
+        </div>
+    </header>
+    <div class="page sign-common signup_reg">
+        <div class="content w1">
+            <div class="twoface">
+                <div class="face">
+                    <img alt="" class="face-vis" src="images/signup-vis@2x.png">
+                    <div class="face-txtbx">
+                        <img alt="" class="logo_white" src="images/logo_footer@2x.png">
+                        <p class="face-txtbx__subh">
+                            Hello there,
+                            <span class="linebreak"></span> welcome to Animal Registry
+                        </p>
+                    </div>
+                </div>
+                <div class="face">
+                    <form action="" class="sign-common-form" id="j-regform" method="get">
+                        <h1 class="c-h1 sign-common-form__h">
+                            Register your profile
+                        </h1>
+                        <div class="form-el">
+                            <label class="c-lbl" for="email">
+Email
+</label>
+                            <input class="c-inp" id="email" minlength="2" required type="email">
+                        </div>
+                        <div class="row">
+                            <div class="half">
+                                <div class="form-el">
+                                    <label class="c-lbl" for="name">
+First name
+</label>
+                                    <input class="c-inp" id="name" name="name" required type="text">
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="form-el">
+                                    <label class="c-lbl" for="lastname">
+Last name
+</label>
+                                    <input class="c-inp" id="lastname" name="lastname" required type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="half">
+                                <div class="form-el">
+                                    <label class="c-lbl" for="password">
+Password
+</label>
+                                    <input class="c-inp" id="password" name="password" required type="password">
+                                    <a class="form-el__info" href="" onClick="return false">
+<img alt="" src="images/i.svg">
+</a>
+                                    <div class="valid-explain">
+                                        <p>Passwords must have at least 8 characters.</p>
+                                        <p>Passwords can’t contain the user name or parts of the user’s full name, such as his first name, email, Date of birth or phone number.</p>
+                                        <p>Passwords must use at least three of the four available character types: lowercase letters, uppercase letters, numbers, and symbols.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="form-el">
+                                    <label class="c-lbl" for="confpassword">
+Confirm password
+</label>
+                                    <input class="c-inp" id="confpassword" name="confpassword" required type="password">
+                                    <a class="form-el__ico_valid" href="">
+<img alt="" src="images/valid.svg">
+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="adduser-act">
+                            <div class="form-el">
+                                <label class="c-lbl pseudo-bx" for="keepmelog">
+<input class="c-chk" id="keepmelog" name="agreed" required type="checkbox">
+<span class="pseudo-chk">
+<img alt="" src="images/pseudo-tick.svg">
+</span>
+Agree with
+<a class="c-lnk-indent" href="">
+Term of use
+</a>
+and
+<a class="c-lnk-indent" href="">
+Privacy policy
+</a>
+</label>
+                            </div>
+                        </div>
+                        <div class="form-el">
+                            <button class="c-but c-but_fill j-sign">
+Sign in
+</button>
+                        </div>
+                        <p class="c-txt or">
+                            Or sign up with
+                        </p>
+                        <div class="row">
+                            <div class="half">
+                                <div class="form-el">
+                                    <a class="c-but c-but_blue" href="">
+Facebook
+</a>
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="form-el">
+                                    <a class="c-but c-but_red" href="">
+Google+
+</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_user">
+        <div class="phone phone_footer">
+            <div class="phone__ico">
+                <img alt="" src="images/phone_light.svg">
+            </div>
+            <div>
+                <a class="phone__lnk" href="">
+Need some help?
+</a>
+                <p class="phone__num">
+                    +1 (844) 446-75-87
+                </p>
+            </div>
+        </div>
+        <div class="reserved">
+            <p class="reserved__txt">
+                All rights reserved.
+                <span class="only-mobile"></span> Animal Registry, 2018.
+            </p>
+        </div>
+    </div>
+    <script>
+        jQuery('#j-regform').validate({
+            rules: {
+                password: {
+                    minlength: 5
+                },
+                confpassword: {
+                    minlength: 5,
+                    equalTo: "#password"
+                }
+            }
+        });
+        $('.j-sign').click(function() {
+            $('.header__logo').fadeOut();
+            $('.j-header-message').addClass('active');
+        })
+    </script>
+</body>
+
+</html>
